@@ -19,3 +19,14 @@ function checkCountValue() {
   }
 }
 
+function resetCount(){
+    count = 0 ;
+    document.getElementById('countDisplay').innerHTML=count; // reset count 
+    
+     // Let the browser repaint, then show alert
+    setTimeout(() => {
+        alert("Followers count has been reset");
+    }, 0);
+
+
+}
